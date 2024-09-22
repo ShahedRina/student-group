@@ -7,29 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-<form>
+<div>
+  <h1 text ="center">اسماء الطلاب</h1>
+</div>
+<form action="{{Route('info.shu')}}" method="post">
+  @csrf
+  <div class="container 5p">
+ 
   <div class="form-group">
     <label for="exampleInputEmail1">الطالب الاول </label>
-    <input type="text" class="form-control" >
+    <input name="name1" type="text" class="form-control" >
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">الطالب التاني </label>
-    <input type="text" class="form-control" >
+    <input name="name2" type="text" class="form-control" >
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">الطالب التالت </label>
-    <input type="text" class="form-control" >
+    <input  name="name3" type="text" class="form-control" >
 </div>
       <div class="form-group">
     <label for="exampleInputEmail1">الطالب الرابع </label>
-    <input type="text" class="form-control" >
+    <input name="name4" type="text" class="form-control" >
   </div>
-
   <div class="form-group">
     <label for="exampleInputEmail1">الطالب الخامس </label>
-    <input type="text" class="form-control" >
+    <input name="name5" type="text" class="form-control" >
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>  
+</div>
 </body>
 </html>
